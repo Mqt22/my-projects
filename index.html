@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <meta name="title" content="Your Dashboard Title">
+    <meta name="description" content="An interactive and responsive dashboard built using HTML, CSS, and JavaScript.">
+    <meta name="keywords" content="dashboard, HTML, CSS, JavaScript, responsive, analytics">
+    <meta name="author" content="Your Name">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph (for sharing on social media) -->
+    <meta property="og:title" content="LockGod">
+    <meta property="og:description"
+        content="An interactive and responsive dashboard built using HTML, CSS, and JavaScript.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://yourdomain.com">
+
+    <!-- Title -->
+    <title>Dashboard | LockGOd</title>
+
+    <!-- Google Font: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+        integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+    <section class="sidebar-1">
+        <img src="LockGod.png" alt="">
+        <ul class="nav">
+            <li id="nav-1"><a href="#"><i class="ri-bar-chart-box-line"></i>&nbsp;Dashboard</a></li>
+            <li id="nav-2"><a href="#"><i class="ri-stack-line"></i>&nbsp;Subscriber</a></li>
+            <li id="nav-3"><a href="#"><i class="fa-solid fa-square-check"></i>&nbsp;Plans</a></li>
+            <li id="nav-4"><a href="#"><i class="fa-solid fa-chart-pie"></i>&nbsp;Promo Code</a></li>
+            <li id="nav-5"><a href="#"><i class="ri-group-line"></i>&nbsp;Payments</a></li>
+            <li id="nav-6"><a href="#"><i class="ri-group-line"></i>&nbsp;Pick</a></li>
+            <li id="nav-7"><a href="#"><i class="ri-group-line"></i>&nbsp;Message</a></li>
+        </ul>
+        <section class="tab">
+            <li id="tab-1"><i class="ri-lifebuoy-line"></i>&nbsp;Support</li>
+            <li id="tab-2"><i class="ri-settings-5-line"></i>&nbsp;Settings</li>
+            <hr>
+            <li id="tab-3">Log in&nbsp;&nbsp;&nbsp;<i class="ri-logout-box-line"></i></li>
+        </section>
+    </section>
+    <i class="fa-solid fa-bars hamburger-icon" id="hamburger"></i>
+
+
+
+    <section class="dashboard-card-boxes-main">
+        <h1>Dashboard</h1>
+        <section class="dashboard-card-boxes">
+            <div class="card-1">
+                <h2>Total Subscriber</h2>
+                <p>$128,320</p>
+            </div>
+            <div class="card-2">
+                <div class="left">
+                    <h2>Active Plan</h2>
+                    <p>$128,320</p>
+                </div>
+                <div class="box-1"><i class="ri-arrow-up-line"></i>11.09%</div>
+            </div>
+            <div class="card-3">
+                <div class="left">
+                    <h2>Active Plan</h2>
+                    <p>$128,320</p>
+                </div>
+                <div class="box-2"><i class="ri-arrow-up-line"></i>11.09%</div>
+            </div>
+            <div class="card-4">
+                <div class="left">
+                    <h2>Active Plan</h2>
+                    <p>$128,320</p>
+                </div>
+                <div class="box-3"><i class="ri-arrow-up-line"></i>11.09%</div>
+            </div>
+        </section>
+    </section>
+
+
+
+      <div class="container" role="region" aria-label="Money Flow Chart">
+    <div class="header">
+      <div class="title">Money Flow</div>
+      <div class="actions">
+        <button type="button" class="btn" aria-pressed="true" aria-label="Selected Money Flow View">Money Flow</button>
+        <button type="button" class="btn" aria-label="Select 6 Month Range">
+          <svg class="calendar-icon" aria-hidden="true" viewBox="0 0 24 24" >
+            <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+            <line x1="16" y1="2" x2="16" y2="6"></line>
+            <line x1="8" y1="2" x2="8" y2="6"></line>
+            <line x1="3" y1="10" x2="21" y2="10"></line>
+          </svg>
+          6 Month
+        </button>
+      </div>
+    </div>
+    <div class="chart-container">
+      <canvas id="moneyFlowChart" role="img" aria-label="Line chart showing Money Flow from January to June"></canvas>
+    </div>
+  </div>
+
+
+
+
+
+    <div class="subscription-card">
+    <h2>Latest Subscription</h2>
+    <div class="subscription-list">
+      <div class="subscription-item">
+        <div>
+          <p class="title">Ending in 1234</p>
+          <p class="subtext">Expiry 06/2024</p>
+        </div>
+        <span class="status" id="time1">2 hours</span>
+      </div>
+
+      <div class="subscription-item">
+        <div>
+          <p class="title">Ending in 5678</p>
+          <p class="subtext">Expiry 06/2024</p>
+        </div>
+        <span class="status">Weekly</span>
+      </div>
+
+      <div class="subscription-item">
+        <div>
+          <p class="title">Stripe deposit</p>
+          <p class="subtext">billing@untitledui.com</p>
+        </div>
+        <span class="status">Monthly</span>
+      </div>
+
+      <div class="subscription-item">
+        <div>
+          <p class="title">Ending in 1234</p>
+          <p class="subtext">Expiry 06/2024</p>
+        </div>
+        <span class="status" id="time2">1 day ago</span>
+      </div>
+
+      <div class="subscription-item">
+        <div>
+          <p class="title">PayPal deposit</p>
+          <p class="subtext">alina@untitledui.com</p>
+        </div>
+        <span class="status" id="time3">1 day ago</span>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="nav.js"></script>
+<script src="graph.js"></script>
+<script src="script.js"></script>
+</html>
