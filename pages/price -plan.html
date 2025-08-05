@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="This is a lockGod landing page">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Landing Page - PaZhong Automation">
+    <meta property="og:description" content="This is a lockGod landing page">
+    <meta property="og:image" content="https://yourdomain.com/og-image.png">
+    <meta name="theme-color" content="#0A0908">
+    <title>LockGod Lnaidng page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Bitcount+Grid+Single:wght@100..900&family=Bitcount+Single:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Sans+Sunuwar&family=Oswald:wght@200..700&family=Roboto+Slab:wght@100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/price plan.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <section class="main-price-plan">
+        <span class="small-title">Pricing</span>
+        <h2>Pricing plans</h2>
+        <p>Simple, transparent pricing that grows with you. Try any plan free for 30 days.</p>
+        <ul class="nav-link">
+            <li><a href="#" id="weekly">Weekly Pricing</a></li>
+            <li><a href="../pages/Monthly.html" id="Monthly" target="_self">Monthly Pricing</a></li>
+        </ul>
+        <section class="price-plan-box-main">
+            <section class="price-pla-box" id="priceBox">
+                <nav class="nav">
+                    <li><a href="#" id="nav-1">Basic Plan</a></li>
+                    <li><a href="#" id="nav-2">Most Popular</a></li>
+                </nav>
+                <h1>$10/WeekL</h1>
+                <p>our most popular plan</p>
+                <hr>
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+                    <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+                </ul>
+                <hr>
+                <button id="getStartedBtn" onclick="showtheplan1()">Get Started</button>
+            </section>
+
+
+
+            <section class="price-pla-box">
+                <nav class="nav">
+                    <li><a href="#" id="nav-1">Business plan</a></li>
+                    <li><a href="#" id="nav-2">Most Popular</a></li>
+                </nav>
+                <h1>$20/WeekL</h1>
+                <p>Growing teams up to 20 users</p>
+                <hr>
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+                    <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+                </ul>
+                <hr>
+                <button onclick="showtheplan2()">Get Started</button>
+            </section>
+
+
+
+
+            <section class="price-pla-box">
+                <nav class="nav">
+                    <li><a href="#" id="nav-1">Enterprise Plan</a></li>
+                    <li><a href="#" id="nav-2">Most Popular</a></li>
+                </nav>
+                <h1>$40/WeekL</h1>
+                <p>Advanced features + unlimited users.</p>
+                <hr>
+                <ul>
+                    <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+                    <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+                    <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+                </ul>
+                <hr>
+                <button onclick="showtheplan3()">Get Started</button>
+            </section>
+        </section>
+    </section>
+
+    <sectiom class="selected-plan-main" id="select1">
+        <nav class="nav">
+            <li><a href="#" id="nav-1">Basic Plan</a></li>
+            <li><a href="#" id="nav-2">Most Popular</a></li>
+        </nav>
+        <h1>Subscription</h1>
+        <p>our most popular plan</p>
+        <hr>
+        <ul>
+            <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+            <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+            <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+        </ul>
+        <hr>
+        <button>Get Started</button>
+    </sectiom>
+
+
+    <sectiom class="selected-plan-main" id="select2">
+        <nav class="nav">
+            <li><a href="#" id="nav-1">Business plan</a></li>
+            <li><a href="#" id="nav-2">Most Popular</a></li>
+        </nav>
+        <h1>Subscription</h1>
+        <p>Growing teams up to 20 users</p>
+        <hr>
+        <ul>
+            <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+            <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+            <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+        </ul>
+        <hr>
+        <button>Get Started</button>
+    </sectiom>
+    <script>
+        let selectedplanmain = document.getElementById("select2");
+        function showtheplan2() {
+            selectedplanmain.classList.toggle("show");
+        }
+    </script>
+    <sectiom class="selected-plan-main" id="select3">
+        <nav class="nav">
+            <li><a href="#" id="nav-1">Enterprise Plan</a></li>
+            <li><a href="#" id="nav-2">Most Popular</a></li>
+        </nav>
+        <h1>Subscription</h1>
+        <p>Advanced features + unlimited users.</p>
+        <hr>
+        <ul>
+            <li><i class="fa-regular fa-circle-check"></i>Access to all basic features</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic reporting and analytics</li>
+            <li><i class="fa-regular fa-circle-check"></i>Up to 10 individual users</li>
+            <li><i class="fa-regular fa-circle-check"></i>20GB individual data each user</li>
+            <li><i class="fa-regular fa-circle-check"></i>Basic chat and email support</li>
+        </ul>
+        <hr>
+        <button>Get Started</button>
+    </sectiom>
+    <script src="../javascript's/price-pla.js"></script>
+</body>
+
+</html>

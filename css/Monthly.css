@@ -1,0 +1,73 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+.main-price-plan{
+    width: 100%;
+    max-width: 1472px;
+    height: 100%;
+    max-height: 1991px;
+    border: 1px solid #0C0C0C;
+    background: #0C0C0C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 96px;
+    padding-bottom: 192px;
+    gap: 40px;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+.main-price-plan>.small-title{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #E9D7FE;
+}
+.main-price-plan>h2{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+    color: #FFFFFF;
+}
+.main-price-plan>p{
+    font-size: 20px;
+    color: #E9D7FE;
+    font-weight: 400;
+    max-width: 900px;
+    letter-spacing: 1.2px;
+}
+.main-price-plan>.nav-link{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    list-style-type: none;
+    border: 1px solid #F4EBFF;
+    width: 350px;
+    height: 70px;
+    padding: 6px;
+    border-radius: 8px;
+}
+.nav-link>li>a{
+    font-size: 16px;
+    font-weight: 600;
+    color: #6941C6;
+    text-decoration-line: none;
+    letter-spacing: 1.2px;
+}
+#weekly{
+     color: #FFFFFF;
+}
+#Monthly{
+    border: 1px solid #FFFFFF;
+    padding: 10px 14px;
+    background: #FFFFFF;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.381);
+    border-radius: 8px;
+}

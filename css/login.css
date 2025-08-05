@@ -1,0 +1,490 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #0A0908 50%, #cdff17 50%);
+    z-index: 999;
+    font-family: 'Inter', sans-serif;
+}
+
+.main-login-page {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+}
+
+.main-login-page>.login-left-side {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.login-left-side>.LockGod {
+    width: 237px;
+    height: 61px;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.login-left-side>h2 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 600;
+    text-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.61);
+    margin-top: -25px;
+}
+
+/* Form css */
+form {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: start;
+    width: 70%;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+    margin-left: -80px;
+}
+
+form>label {
+    color: white;
+    font-size: 1rem;
+    font-weight: medium;
+    letter-spacing: 1.2px;
+}
+
+form>input {
+    width: 528px;
+    height: 44px;
+    padding: 15px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 400;
+    background: #312E35;
+    border: 2px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.3s ease, background 0.3s ease;
+}
+
+form>input:focus {
+    outline: none;
+}
+
+form>input:hover {
+    border-color: #cdff17;
+}
+
+form>input::placeholder {
+    color: #ffffff;
+}
+
+form>#togglePassword {
+    position: relative;
+    top: -50px;
+    left: 110%;
+    cursor: pointer;
+    color: #717680;
+}
+
+/* Custom checkbox css */
+.custom-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    cursor: pointer;
+    user-select: none;
+    position: relative;
+    top: 2px;
+}
+
+.custom-checkbox input {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff13;
+    /* unchecked background */
+    border-radius: 4px;
+    position: relative;
+    border: 1px solid white;
+}
+
+/* <-------------------------------------> */
+
+/* checked state */
+.custom-checkbox input:checked+.checkmark {
+    background-color: #00000000;
+    /* green background when checked */
+}
+
+/* <-------------------------------------> */
+
+/* optional: checkmark tick */
+.custom-checkbox .checkmark::after {
+    content: "";
+    position: absolute;
+    display: none;
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+
+.custom-checkbox input:checked+.checkmark::after {
+    display: block;
+}
+
+/* <-------------------------------------> */
+
+.custom-footer {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    font-size: 1rem;
+    width: 90%;
+    margin-top: -60px;
+    gap: 110px;
+}
+
+.custom-footer-left {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-footer-right {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.custom-footer-right>a {
+    color: #79A6E9;
+}
+
+.login-left-side>button {
+    width: 100%;
+    max-width: 528px;
+    height: 44px;
+    padding: 10px;
+    background: linear-gradient(90deg, #d6ff3c 0%, #c7e7f3 50%, #b36cf7 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: #272727;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0);
+    margin-top: -20px;
+}
+
+.login-left-side>.bt-1 {
+    width: 100%;
+    max-width: 528px;
+    height: 44px;
+    background: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 0.9rem;
+    font-weight: bolder;
+    color: #272727;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0);
+}
+
+.login-left-side>.login-link {
+    color: rgb(139, 139, 139);
+    font-size: 0.9rem;
+    font-weight: 400;
+    margin-top: -15px;
+    margin-bottom: 0;
+}
+
+.login-link .login-highlight {
+    color: orange;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 4px;
+}
+
+/* right section css */
+.main-login-page>.login-right-side {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+/*<---------------------------------------> */
+
+/* right section img css */
+.login-right-side>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 100px;
+    width: 50%;
+    padding: 20px 14px;
+    font-size: 0.7rem;
+}
+
+footer>p {
+    color: rgb(126, 126, 126);
+}
+
+footer>.email-1 {
+    color: rgb(126, 126, 126);
+}
+@media only screen and (max-width: 320px){
+    body {
+        background: #000;
+    }
+
+    .main-login-page>.login-left-side {
+        width: 100%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form>input {
+        width: 270px;
+    }
+
+    form>#togglePassword {
+        top: -50px;
+        left: 125%;
+    }
+
+    .custom-footer {
+        gap: 40px;
+        width: 100%;
+    }
+
+    .custom-footer-left {
+        gap: 0;
+    }
+
+    .custom-footer-right {
+        gap: 0;
+    }
+
+    .custom-footer-right>a {
+        font-size: 0.88rem;
+    }
+
+    .custom-checkbox {
+        font-size: 0.88rem;
+    }
+
+    .login-left-side>button,
+    .login-left-side>.bt-1 {
+        width: 85%;
+    }
+
+    .main-login-page>.login-right-side {
+        display: none;
+    }
+
+    footer {
+        font-size: 0.88rem;
+        gap: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+@media only screen and (min-width: 321px) and (max-width: 600px) {
+    body {
+        background: #000;
+    }
+
+    .main-login-page>.login-left-side {
+        width: 100%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form>input {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    form>#togglePassword {
+        top: -50px;
+        left: 125%;
+    }
+
+    .custom-footer {
+        gap: 40px;
+        width: 90%;
+    }
+
+    .custom-footer-left {
+        gap: 0;
+    }
+
+    .custom-footer-right {
+        gap: 0;
+    }
+
+    .custom-footer-right>a {
+        font-size: 0.88rem;
+    }
+
+    .custom-checkbox {
+        font-size: 0.88rem;
+    }
+
+    .login-left-side>button,
+    .login-left-side>.bt-1 {
+        width: 85%;
+    }
+
+    .main-login-page>.login-right-side {
+        display: none;
+    }
+
+    footer {
+        font-size: 0.88rem;
+        gap: 40px;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .login-left-side {
+        width: 100%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form>input {
+        width: 320px;
+    }
+
+    form>#togglePassword {
+        top: -50px;
+        left: 125%;
+    }
+
+    .custom-footer {
+        width: 90%;
+        font-size: 0.7rem;
+    }
+
+    .login-left-side>button,
+    .login-left-side>.bt-1 {
+        width: 80%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 968px) {
+    .login-left-side {
+        width: 100%;
+    }
+
+    form {
+        width: 60%;
+    }
+
+    form>input {
+        width: 350px;
+        margin-left: 0;
+    }
+
+    form>#togglePassword {
+        top: -50px;
+        left: 125%;
+    }
+
+    .custom-footer {
+        width: 100%;
+        font-size: 0.7rem;
+    }
+
+    .login-left-side>button,
+    .login-left-side>.bt-1 {
+        width: 90%;
+    }
+
+    footer {
+        justify-content: center;
+    }
+}
+
+@media only screen and (min-width: 969px) and (max-width: 1024px) {
+.login-left-side {
+        width: 100%;
+    }
+
+    form {
+        width: 85%;
+        margin-left: 0;
+    }
+
+    form>input {
+        width: 450px;
+    }
+
+    form>#togglePassword {
+        top: -50px;
+        left: 95%;
+    }
+
+    .custom-footer {
+        width: 95%;
+        font-size: 0.7rem;
+    }
+
+    .login-left-side>button,
+    .login-left-side>.bt-1 {
+        width: 90%;
+    }
+}

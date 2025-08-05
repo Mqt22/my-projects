@@ -1,0 +1,199 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+/*<---------------------------------------> */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: linear-gradient(to right, #0A0908 50%,#cdff17 50%);
+    z-index: 999;
+}
+
+/* Sign up mian section left CSS */
+.left-main-section {
+    border: 1px solid black;
+    height: auto;
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+/*<---------------------------------------> */
+
+/* left LockGod logo CSS */
+.left-main-section>.LockGod {
+    width: 180px;
+    height: 50px;
+    overflow: hidden;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+/*<---------------------------------------> */
+
+/* left Heading CSS */
+.left-main-section>h3 {
+    color: white;
+    font-size: 1.6rem;
+    font-weight: 700;
+    text-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.61);
+    margin-top: -25px;
+}
+/*<---------------------------------------> */
+
+/* Left P CSS */
+.left-main-section>p {
+    font-weight: 400;
+    font-size: 1rem;
+    color: #D6D5D3;
+    text-shadow: 1px 2px 3px 4px rgba(0, 0, 0, 0.61);
+    max-width: 200px;
+    text-align: center;
+}
+/*<---------------------------------------> */
+.left-main-section>.Input-boxes{
+    width: 356px;
+    height: 80px;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+}
+.Input-boxes>input{
+    width: 80px;
+    height: 80px;
+    background: #312E35;
+    border-radius: 8px;
+    border: 2px solid #B3B3B3;
+    font-size: 2rem;
+    color: #FFFF;
+    text-align: center;
+}
+/* Button of left main section css */
+.left-main-section>button {
+    width: 336px;
+    height: 44px;
+    padding: 10px 16px;
+    background: linear-gradient(90deg, #d6ff3c 0%, #c7e7f3 50%, #b36cf7 100%);
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+    cursor: pointer;
+}
+.left-main-section>.email{
+    color: #c6c6c6;
+}
+.left-main-section>.email>a{
+    color: #F99E0C;
+    text-decoration-line: none;
+}
+.left-main-section>a{
+    color: #FFFF;
+    text-decoration-line: none;
+}
+.left-main-section>.email-1{
+    font-weight: 400;
+    font-size: 1rem;
+    color: #c6c6c6;
+    letter-spacing: 1.2;
+    text-align: 1px 2px 3px 4px rgba(0 0 0 0.61);
+    text-decoration: none;
+    margin-top: -10px;
+}
+/*<---------------------------------------> */
+
+/* Footer styling css */
+.custom-footer {
+    color: #c6c6c6;
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    font-size: 0.8rem;
+    margin-top: 100px;
+    position: relative;
+    left: -30%;
+}
+/*<---------------------------------------> */
+
+/* right section css */
+.right-section {
+    width: 50%;
+    height: 100vh;
+    overflow: hidden;
+}
+/*<---------------------------------------> */
+
+/* right section img css */
+.right-section>img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+/*<---------------------------------------> */
+
+/* Responsive design for sceen below 600 */
+@media only screen and (max-width: 600px) {
+    body {
+        background: #0A0908;
+    }
+    .left-main-section{
+        width: 100%;
+        height: inherit;
+    }
+    .Input-boxes>input{
+        width: 72px;
+        height: 70px;
+        margin-left: 5px;
+    }
+    .custom-footer{
+        left: 0;
+    }
+    .right-section {
+        display: none;
+    }
+}
+/*<---------------------------------------> */
+
+/* Responsive design for screen below 601-768 */
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    .left-main-section{
+        width: 50%;
+        height: 100%;
+    }
+    .custom-footer{
+        left: -60px;
+    }
+}
+/*<---------------------------------------> */
+
+/* Left commented bcz it maybe used in future */
+/* @media only screen and (min-width: 769px) and (max-width: 986px) {
+
+    .main-sign-up-form{
+        justify-content: space-evenly;
+    }
+    .input-group>input{
+        width: 90%;
+    }
+    form>input{
+        width: 90%;
+    }
+    .input-wrapper{
+        width: 90%;
+    }
+    .custom-footer{
+        gap: 20px;
+    }
+} */

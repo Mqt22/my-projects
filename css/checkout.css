@@ -1,0 +1,656 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+}
+
+
+body {
+    background: linear-gradient(#252525,#0F0F0F);
+    min-height: 100vh;
+}
+
+.mian-checkout {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#1E1E2F , #000000);
+}
+
+.mian-checkout>h1 {
+    color: #CCFF3F;
+    font-size: 48px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.ceckbox-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+}
+
+.ceckbox-box>.left-checkout {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    max-height: 1016px;
+    padding: 20px;
+    gap: 20px;
+}
+
+.left-checkout>.samll-title {
+    font-size: 20px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+.left-checkout>p {
+    font-size: 33.06px;
+    font-weight: 500;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.left-checkout>.small-heading {
+    font-size: 23.14px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.left-checkout>h1 {
+    font-size: 55.12px;
+    font-weight: 500;
+    letter-spacing: 1.2px;
+    color: #ffffff;
+}
+
+.left-checkout>h1>.mon {
+    font-size: 16.08px;
+    font-weight: 400;
+    color: #ffffffad;
+    letter-spacing: 1.2px;
+}
+
+.left-checkout>.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+    margin-bottom: 15px;
+}
+
+.left-checkout>.payment-method {
+    width: 100%;
+    max-width: 580px;
+    height: 55px;
+    border-radius: 8px;
+    padding: 10px 20px 10px 20px;
+    background: #0000001A;
+    margin-bottom: 15px;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    transition: all 0.5s ease;
+}
+
+.payment-method>input[type="checkbox"] {
+    appearance: none;
+    width: 28px;
+    height: 28px;
+    border: 1.5px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.payment-method>input[type="checkbox"]:checked {
+    background: transparent;
+    /* or any darker green */
+    border-color: #222;
+    position: relative;
+    border: 1px solid black;
+}
+
+.payment-method>input[type="checkbox"]:checked::after {
+    content: '✔';
+    position: absolute;
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    top: 0px;
+    left: 4px;
+}
+
+.payment-method>i {
+    margin-left: 20px;
+    font-size: 30px;
+    color: white;
+}
+
+.payment-method:hover {
+    background: linear-gradient(90deg, #d6ff3c 0%, #c7e7f3 50%, #b36cf7 100%);
+    cursor: pointer;
+}
+
+/* On hover, checkbox border becomes black */
+.payment-method:hover>input[type="checkbox"] {
+    border-color: black;
+}
+
+/* On hover, icon turns black */
+.payment-method:hover>i {
+    color: black;
+}
+
+#payment4>i {
+    border: 1px solid white;
+    width: 30px;
+    height: 30px;
+    font-size: 14px;
+    color: rgb(20, 20, 20);
+    background: white;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#payment4:hover>i {
+    background: #000;
+    color: white;
+    border-color: black;
+}
+
+.ceckbox-box>.right-checkout {
+    display: flex;
+    justify-content: start;
+    align-items: start;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    gap: 30px;
+}
+
+.right-checkout>h3 {
+    font-size: 30px;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+
+
+form>.input1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.input1>.input1-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input1>.input1-input1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input1-input>label,
+.input1-input1>label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.input1-input>input,
+.input1-input1>input {
+    width: 261px;
+    height: 50px;
+    border-radius: 8px;
+    background: #0000001A;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    text-align: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.input1-input>input::placeholder,
+.input1-input1>input::placeholder {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.input1-input>input:focus,
+.input1-input1>input:focus {
+    outline: none;
+    color: white;
+}
+
+
+
+form>.input2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.input2>.input2-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input2>.input2-input2 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input2-input>label,
+.input2-input2>label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.input2-input>input,
+.input2-input2>input {
+    width: 261px;
+    height: 50px;
+    border-radius: 8px;
+    background: #0000001A;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    text-align: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.input2-input>input::placeholder,
+.input2-input2>input::placeholder {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.input2-input>input:focus,
+.input2-input2>input:focus {
+    outline: none;
+    color: white;
+}
+
+
+
+
+
+
+
+form>.input3 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.input3>.input3-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input3>.input3-input3 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input3-input>label,
+.input3-input3>label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.input3-input>input,
+.input3-input3>input {
+    width: 261px;
+    height: 50px;
+    border-radius: 8px;
+    background: #0000001A;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    text-align: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.input3-input>input::placeholder,
+.input3-input3>input::placeholder {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.input3-input>input:focus,
+.input3-input3>input:focus {
+    outline: none;
+    color: white;
+}
+
+
+
+
+
+form>.input4 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+}
+
+.input4>.input4-input {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input4>.input4-input4 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.input4-input>label,
+.input4-input4>label {
+    font-size: 14px;
+    font-weight: 400;
+    color: #ffffff;
+    letter-spacing: 1.2px;
+}
+
+.input4-input>input,
+.input4-input4>input {
+    width: 261px;
+    height: 50px;
+    border-radius: 8px;
+    background: #0000001A;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    text-align: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.input4-input>input::placeholder,
+.input4-input4>input::placeholder {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.input4-input>input:focus,
+.input4-input4>input:focus {
+    outline: none;
+    color: white;
+}
+
+.right-checkout>.summary>h2 {
+    font-size: 20px;
+    font-weight: 400;
+    color: white;
+    letter-spacing: 1.2px;
+    margin-bottom: 20px;
+}
+
+.right-checkout>.summary>.inner-summary {
+    padding: 20px;
+    width: 100%;
+    max-width: 580px;
+    height: auto;
+    background: linear-gradient(#752BFF1F, #A32BFF0A, #7C2BFF12);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+    border-radius: 8px;
+}
+
+.inner-summary>ul {
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    letter-spacing: 1.2px;
+    padding-bottom: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.inner-summary>ul>li {
+    font-size: 15px;
+    font-weight: 400;
+    color: #ffffff7b;
+    letter-spacing: 1.2px;
+}
+
+.inner-summary>label {
+    font-size: 14px;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.inner-summary>input {
+    width: 540px;
+    height: 50px;
+    border-radius: 8px;
+    background: #0000001A;
+    border: 1px solid #ffffff1a;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.258);
+    text-align: start;
+    padding: 10px 20px 10px 20px;
+}
+
+.inner-summary>input:focus {
+    outline: none;
+    color: white;
+}
+
+.inner-summary>input::placeholder {
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+.inner-summary>.total {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: start;
+    gap: 20px;
+    flex-direction: row;
+    width: 100%;
+    border: 1px solid rgb(63, 63, 63);
+    padding: 10px;
+    position: relative;
+    border-radius: 8px;
+    height: 50px;
+}
+
+.inner-summary>.total>h1 {
+    position: absolute;
+    left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.inner-summary>.total>p {
+    position: absolute;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+    color: white;
+}
+
+.right-checkout>button {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(90deg, #d6ff3c 0%, #c7e7f3 50%, #b36cf7 100%);
+    border: none;
+    border-radius: 16px;
+    font-size: 14px;
+    font-weight: bolder;
+    color: #272727;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    z-index: 1;
+    box-shadow: 0 30px 40px rgba(0, 0, 0, 0);
+    text-decoration-line: none;
+    text-align: center;
+}
+
+.right-checkout>p {
+    text-align: center;
+    font-size: 18px;
+    color: white;
+    font-weight: 400;
+    letter-spacing: 1.2px;
+}
+
+@media (max-width: 768px) {
+    .mian-checkout {
+        flex-direction: row;
+        width: 100%;
+        padding: 15px;
+        gap: 30px;
+        max-height: 100%;
+    }
+
+    .ceckbox-box {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .ceckbox-box>.left-checkout,
+    .ceckbox-box>.right-checkout {
+        max-width: 100%;
+        margin-top: 0;
+        padding: 0;
+    }
+
+    .left-checkout>p,
+    .left-checkout>h1 {
+        font-size: 30px;
+    }
+
+    .left-checkout>.small-heading {
+        font-size: 18px;
+    }
+
+    .left-checkout>.title {
+        font-size: 20px;
+    }
+    
+    .payment-method {
+        height: auto;
+        padding: 15px;
+    }
+
+    .payment-method>i {
+        margin-left: 10px;
+        font-size: 24px;
+    }
+    .input1-input>input,
+    .input1-input1>input,
+    .input2-input>input,
+    .input2-input2>input,
+    .input3-input>input,
+    .input3-input3>input,
+    .input4-input>input,
+    .input4-input4>input {
+        width: 100%;
+        background: none;
+    }
+
+    .inner-summary>input {
+        width: 100%;
+    }
+
+    .inner-summary>.total>h1,
+    .inner-summary>.total>p {
+        font-size: 16px;
+    }
+
+    .right-checkout>button {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .right-checkout>p {
+        font-size: 16px;
+    }
+}
